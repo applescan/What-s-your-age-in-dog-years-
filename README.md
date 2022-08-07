@@ -5,7 +5,7 @@ This project is inspired by a course I'm taking with codecademy, one of the Java
 
 ### Links
 
-- Live Site URL: https://applescan.github.io/Email-Signature-Generator-Signature.me/
+- Live Site URL: https://applescan.github.io/Whats-your-age-in-dog-years/
 
 ### Built with
 
