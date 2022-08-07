@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count your age in dog years!</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+        </style>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="form">
+    <div class="input-boxes">
+        <div class="title">
+            <h1>What's your age in dog years? ✨</h1>
+        </div>
+    <br>
+    <br>
+        <div class="name-input">
+            <label for="name">Your name</label>
+    <br>
+		    <input type="text" id="name"/>
+        </div>
+    <br>
+        <div class="age-input">
+            <label for="age">Your age</label>
+    <br>
+            <input type="number" id="age"/>
+        </div>
+    <br>
+        <div class="submit">
+            <button onclick="calculate()">Calculate in dog years</button> 
+        </div>
+        <div class="result">
+    <br>
+            <label>Your age...</label>
+        </div>
+
+        <div class="dogAge">
+            <h2 id="dogAge"></h2>
+        </div> 
+        <input type="button" value="Reset" onclick="clearResult()">
+    </div>
+<!-- needs to divide the form-container 
+    div with the dog-image div to show inline with percentage of 70:30-->
+        <div class="dog-image">
+            <img src="image/dog.png" id="dog-icon"> 
+        </div>
+</div>
+
+<div class="footer">
+    <p>💖 Coded and designed by <a href= "feliciadigitaldesign.art"> feliciadigitaldesign.art</a> 💖</p>
+</div>
+
+    <script>  
+        
+        function calculate(){
+
+            let Myname = document.getElementById("name").value;
+            let myAge = document.getElementById("age").value;
+            let earlyYears = 2; 
+            earlyYears *=10.5;
+            let laterYears = myAge - 2;
+            laterYears *= 4;
+            myAgeInDogYears = earlyYears + laterYears;
+
+        if (Myname == "" || myAge == "" ){
+           
+            alert("You need to fill in your name and age");
+} 
+
+        else{
+
+            document.getElementById("dogAge").innerHTML = "Is..." + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + Myname + "!";
+}
+
+}
+        function clearResult(){
+            window.location.reload();
+}
+   
+    </script>
+</body>
+</html>

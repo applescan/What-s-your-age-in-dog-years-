@@ -1,0 +1,25 @@
+//my age in human years
+let myAge = 25;
+// dog's early years
+let earlyYears = 2; 
+earlyYears *=10.5;
+// after first 2 years dog's age incease 4 years incement, the 10 years are only in the beginning (early years)
+let laterYears = myAge - 2;
+// add 4 years dog age on every 1 year human age
+laterYears *= 4;
+// addnig it together to calculate dog years
+myAgeInDogYears = earlyYears + laterYears; 
+let Myname = 'Felicia'
+Myname.toLowerCase(); 
+console.log(`My name is ${Myname}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`)
+
+function calculate() {
+                let Myname = document.getElementById("name").value;
+                let myAge = document.getElementById("age").value;
+                let earlyYears = 2; 
+                earlyYears *=10.5;
+                let laterYears = myAge - 2;
+                laterYears *= 4;
+                myAgeInDogYears = earlyYears + laterYears; 
+                document.getElementById("dogAge").innerHTML = "Is..." + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + Myname + "!";
+            }
