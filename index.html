@@ -40,8 +40,10 @@
 
         <div class="dogAge">
             <h2 id="dogAge"></h2>
-        </div> 
-        <input type="button" value="Reset" onclick="clearResult()">
+        </div>  
+        <div class="reset-button">
+            <input type="button" value="Reset" onclick="clearResult()">
+        </div>
     </div>
 <!-- needs to divide the form-container 
     div with the dog-image div to show inline with percentage of 70:30-->
@@ -73,7 +75,7 @@
 
         else{
 
-            document.getElementById("dogAge").innerHTML = "Is..." + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + Myname + "!";
+            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + Myname + "!";
 }
 
 }
