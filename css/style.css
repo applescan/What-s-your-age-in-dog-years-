@@ -25,13 +25,13 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600px;
     padding-bottom: 10%;
 }
 
 label {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600px;
     color: #FAA552;
     margin: 20px 0 20px 0 ;
@@ -39,7 +39,7 @@ label {
 
 button {
         background-color:#A9AFE3;
-        font-size: 25px;
+        font-size: 20px;
 		line-height: 1.15;
         letter-spacing: -.02em;
         color: white;
@@ -53,7 +53,7 @@ button {
 
 input {
     background-color:white;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.15;
     letter-spacing: -.02em;
     color: #A9AFE3;
