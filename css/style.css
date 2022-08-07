@@ -159,7 +159,11 @@ input {
         display: flex;
         width : 15vh;
         margin: auto;
-        
-    
     }
+	
+    p , a {
+    	font-weight: 900px;
+    	font-size: 10px;
+    	color: white;
+ }
 }
