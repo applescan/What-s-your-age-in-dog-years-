@@ -8,7 +8,7 @@
     <title>Count your age in dog years!</title>
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
-        </style>
+    </style>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -26,9 +26,10 @@
         </div>
     <br>
         <div class="age-input">
-            <label for="age">Your age</label>
+            <label for="age">Your age: </label> <label id="age-output"></label>
     <br>
-            <input type="number" id="age"/>
+            <input type="range" min="1" max="100" value="50" class="slider" id="age">
+            
         </div>
     <br>
         <div class="submit">
@@ -60,7 +61,7 @@
     <script>  
         
         function calculate(){
-
+            
             let Myname = document.getElementById("name").value;
             let myAge = document.getElementById("age").value;
             let earlyYears = 2; 
@@ -83,7 +84,14 @@
         function clearResult(){
             window.location.reload();
 }
-   
+        var slider = document.getElementById("age");
+        var output = document.getElementById("age-output");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+}
     </script>
 </body>
 </html>
+
