@@ -75,10 +75,14 @@
             alert("You need to fill in your name and age");
 } 
 
-        else{
+        else if ( myAge >=50 && myAge<=70 ) {
 
-            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + Myname + "!";
+            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're ancient " + Myname + "! 💀";
 }
+        else {
+
+            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + Myname + "! 👴🏽👵🏽";
+        }
 
 }
         function clearResult(){
@@ -94,4 +98,3 @@
     </script>
 </body>
 </html>
-
