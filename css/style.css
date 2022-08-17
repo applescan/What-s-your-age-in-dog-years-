@@ -3,8 +3,7 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    
+    background-size: cover; 
   }
 
  * {
@@ -15,12 +14,14 @@ html {
     color: #A9AFE3;
     line-height: 1.4;
     max-height: 100vh;
+    justify-content: space-around;
   }
 
 h1 {
     font-size: 60px;
     font-weight: 900px;
     line-height: 1.15;
+    width: 70%;
 
 }
 
@@ -28,6 +29,7 @@ h2 {
     font-size: 20px;
     font-weight: 600px;
     padding-bottom: 5%;
+    width: 70%; 
 }
 
 label {
@@ -45,7 +47,7 @@ button {
         color: white;
         -webkit-font-smoothing: antialiased;
         display: inline-block;
-       	width: 60%;
+       	width: 70%;
 		border: 0px;
 		padding: 10px;
 		border-radius: 10px;
@@ -59,29 +61,26 @@ input {
     color: #A9AFE3;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
-    width: 60%;
+    width: 70%;
     border: 3px solid #A9AFE3;
     padding: 10px;
     border-radius: 10px;
 }
 
-.form-container {
-    flex: 1;
-}
 
-.dog-image > img {
+.dog-image {
     display: flex;
-    width : 45vh;
+    height: 80vh; 
+    max-width: 70vw;
     margin: auto;
-    overflow: auto;
-    padding-top: 30px;
 }
 
 .form {
-    display: inline-flex;
-	justify-content: center;
+    display: flex;
+	/*justify-content: center;*/
     padding: 5% 10% 10% 10%;
     margin: auto;
+    width: fit-content;
 }
 
 .footer {
@@ -103,14 +102,13 @@ input {
  input[type="range"] {
     -webkit-appearance: none;
     margin-right: 15px;
-    width: 60%;
+    width: 70%;
     height: 7px;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
-    background-color: #A9AFE3
-    background-size: 70% 100%;
+    background-size : 70% 100%;
     background-repeat: no-repeat;
-  }
+ }
   
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -131,10 +129,14 @@ input {
   
 
 @media screen and (max-width: 900px) {
+
+    * {
+        max-height: 100vh;
+        justify-content: space-around;
+      }
   
     .form {
         display: inline-block;
-        justify-content: center;
         padding: 10%;
         margin: auto;
     }
@@ -148,6 +150,7 @@ input {
         font-size: 20px;
         font-weight: 600px;
         padding-top: 5px;
+        width: 100%;
     }
     
     label {
@@ -185,10 +188,11 @@ input {
         border-radius: 10px;
     }
    
-    .dog-image > img {
-        padding-top: 0px;
+    .dog-image {
+        padding-top: 30px;
         display: flex;
-        width : 15vh;
+        height: 20vh; 
+        max-width: 20vw;
         margin: auto;
     }
 	
@@ -205,7 +209,6 @@ input {
     height: 7px;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
-    background-color: #A9AFE3
     background-size: 70% 100%;
     background-repeat: no-repeat;
   }
