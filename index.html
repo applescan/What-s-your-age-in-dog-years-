@@ -62,7 +62,7 @@
         
         function calculate(){
             
-            let Myname = document.getElementById("name").value;
+            let myName = document.getElementById("name").value;
             let myAge = document.getElementById("age").value;
             let earlyYears = 2; 
             earlyYears *=10.5;
@@ -70,18 +70,18 @@
             laterYears *= 4;
             myAgeInDogYears = earlyYears + laterYears;
 
-        if (Myname == "" || myAge == "" ){
+        if (myName == "" || myAge == "" ){
            
             alert("You need to fill in your name and age");
 } 
 
-        else if ( myAge >=50 && myAge<=70 ) {
+        else if ( myAge >=60 && myAge <=100 ) {
 
-            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're ancient " + Myname + "! 💀";
+            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're ancient " + myName + "! 💀";
 }
-        else if (myAge > 0) {
+        else {
 
-            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + Myname + "! 👴🏽👵🏽";
+            document.getElementById("dogAge").innerHTML = "Is " + myAgeInDogYears + " in dog years!" + " Gosh, you're old " + myName + "! 👴🏽👵🏽";
         }
 
 }
@@ -98,3 +98,4 @@
     </script>
 </body>
 </html>
+
