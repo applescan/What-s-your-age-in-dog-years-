@@ -192,9 +192,9 @@ input {
     .dog-image {
         padding-top: 30px;
         display: flex;
-        height: 30vh; 
-    
+        height: 20vh; 
         margin: auto;
+        width: auto;
     }
 	
     p , a {
