@@ -144,6 +144,7 @@ input {
     h1 {
         font-size: 35px;
         font-weight: 900px;
+        width: 100%;
     }
     
     h2 {
@@ -191,8 +192,8 @@ input {
     .dog-image {
         padding-top: 30px;
         display: flex;
-        height: 20vh; 
-        max-width: 20vw;
+        height: 30vh; 
+    
         margin: auto;
     }
 	
