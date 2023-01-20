@@ -25,4 +25,4 @@ This project is inspired by a course I'm taking with codecademy, one of the Java
 
 ## Author
 
-- Website - https://www.feliciadigitaldesign.art/
+- Website - https://felicia-portfolio.netlify.app/
